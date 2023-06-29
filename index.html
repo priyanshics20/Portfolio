@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanshi's Portfolio</title>
+    <!-- to add logo link -->
+    <link rel="icon" href="image/logo_img.png">
+
+    <link rel="stylesheet" href="main.css">
+
+    <!-- adding boxicons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <div class="head">
+        <a href="#" class="logo"> <img src="image/logo1.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h3>Hello, My name is</h3>
+            <h1>Priyanshi Agrawal</h1>
+            <h5>I am a <span>Web Developer</span></h5>
+            <p>I'm a Computer Science Student. Active Learner,Full Stack developer, Coder. I love to learn new stuffs.
+            </p>
+            <div class="social">
+                <a href="https://github.com/priyanshics20" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/priyanshi-agrawal-a3402a237/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/_priyanshi.27/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <a href="" class="btn">Download Resume</a>
+            <a href="mailto:apriyanshi637@gmail.com" class="btn">Hire Me</a>
+
+        </div>
+
+        <div class="home-img">
+            <img src="image/priyanshi2.png">
+        </div>
+    </section>
+
+    <!-- sub service/ about -->
+    <section class="sub-service" id="about">
+        <div class="about-text">
+            <h2>Find Out More <span>About Me </span></h2>
+        </div>
+        <div class="items">
+            <div class="sub-box">
+                <div class="sub-img">
+                    <img src="image/coding.png" alt="">
+                </div>
+                <h3>Coder</h3>
+                <p>I am an active coder and programmer.</p>
+            </div>
+
+            <div class="sub-box">
+                <div class="sub-img">
+                    <img src="image/Developer.png" alt="">
+                </div>
+                <h3>Developer</h3>
+                <p>My passion is developing new innovative things..</p>
+            </div>
+
+            <div class="sub-box">
+                <div class="sub-img">
+                    <img src="image/drawing.png" alt="">
+                </div>
+                <h3>Drawing</h3>
+                <p>Drawing is my hobby and favourite pastime.</p>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!-- portfolio / projects -->
+
+    <div class="slide-container">
+        <div class="heading">
+            <h2>My Projects</h2>
+            <p>Some of my projects</p>
+        </div>
+        <div class="slide">
+            <img src="image/portfolio.png" alt="">
+            <div class="caption"><a href="https://priyanshics20.github.io/Portfolio/" target="_blank">Portfolio</a></div>
+        </div>
+
+        <div class="slide">
+            <img src="image/Phtotogrpahy.png" alt="">
+            <div class="caption"><a href="https://priyanshics20.github.io/PhotographyBlog/" target="_blank">Phtotogrpahy Blog</a></div>
+        </div>
+
+        <div class="slide">
+            <img src="image/stopwatch.png" alt="">
+            <div class="caption"><a href="https://github.com/priyanshics20/MiniProjects/tree/master/StopWatch" target="_blank">Stopwatch</a></div>
+        </div>
+
+        <div class="slide">
+            <img src="image/Calculator.png" alt="">
+            <div class="caption"><a href="https://priyanshics20.github.io/Calculator/" target="_blank">Calculator</a></div>
+        </div>
+        <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+        <span class="arrow next" onclick="controller(1)">&#10095;</span>
+         
+    </div>
+
+    <!-- service / Skills -->
+    <section class="service"  id="skills">
+        <div class="heading">
+            <h3>Skills</h3>
+            <h2>My Skills</h2>
+            <p>Most common methods for designing websites that work on well on desktop is <br> responsive and adaptive design</p>
+        </div>
+        <div class="service-content">
+            <div class="row">
+                <div class="s s-one">
+                    <img src="image/leetcode.png" alt="">
+                </div>
+                <h3>Leetcode</h3>
+                <h5>Starts From <span>$99</span></h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>    
+            </div>
+
+            <div class="row">
+                <div class="s s-two">
+                    <img src="image/gfg.png" alt="">
+                </div>
+                <h3>Geeks For Geeks</h3>
+                <h5>Starts From <span>$99</span></h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>    
+            </div>
+
+            <div class="row">
+                <div class="s s-three">
+                    <img src="image/github.png" alt="">
+                </div>
+                <h3>Github</h3>
+                <h5>Starts From <span>$99</span></h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>    
+            </div>
+
+            <div class="row">
+                <div class="s s-four">
+                    <img src="image/codechef.png" alt="">
+                </div>
+                <h3>Codechef</h3>
+                <h5>Starts From <span>$99</span></h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>    
+            </div>
+
+        </div>
+    </section>
+
+    <!-- work -->
+    <section class="cta">
+        <div class="heading">
+            <h2>My Coding Profiles</h2>  
+        </div>
+
+        <div class="cta-box">
+            <div class="wrap one">
+                <div class="sub-img">
+                    <a href="https://leetcode.com/Priyanshiag_27/" target="_blank"><img src="image/leetcode.png" alt=""></a>
+                </div>
+                <h3>Leetcode</h3>
+                <!-- <p>Finished Projects</p> -->
+            </div>
+
+            <div class="wrap two">
+                <div class="sub-img">
+                    <a href="https://auth.geeksforgeeks.org/user/apriyanshi637" target="_blank"><img src="image/gfg.png" alt=""></a>
+                </div>
+                <h3>Geeks For Geeks</h3>
+            </div>
+
+            <div class="wrap three">
+                <div class="sub-img">
+                    <a href="https://www.codechef.com/users/apriyanshi637" target="_blank"><img src="image/codechef.png" alt=""></a>
+                </div>
+                <h3>CodeChef</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="center">
+                <h3>Let's talk about eyerything</h3>
+                <p>Don't like forms? Send me an email</p>
+            </div>
+
+            <div class="action">
+                <form action="">
+                    <input type="email" name="email" placeholder="Enter Your email" required>
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- end -->
+    <div class="ends">
+        <p>Copyright © Priyanshi Agrawal</p>
+    </div>
+    <!-- link to js -->
+    <script src="script.js"></script>
+</body>
+</html>
