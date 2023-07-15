@@ -41,7 +41,6 @@ header{
     width: 100%;
 }
 .logo img{
-    /* max-width: 100%; */
     height: auto;
     width: 100px;
 }
@@ -165,6 +164,9 @@ span{
     width: 20%;
     height: auto;
 }
+.home-img img{
+    width:20rem;
+}
 @media screen and (max-width:900px) {
     .home-img img{
         width: 200px;
@@ -266,57 +268,38 @@ span{
     line-height: 28px;
 }
 
-.service-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px, auto));
-    grid-gap: 2rem;
-    align-items: center;
-    margin-top: 5rem;
+/* skills */
+#skills{
+    background-image: url('https://media.istockphoto.com/id/1253193147/photo/abstract-bright-gradient-motion-spring-or-summer-landscape-texture-background-with-natural.jpg?s=612x612&w=0&k=20&c=9kNUvvarqHhj0rlFCyt_QWjOW9Mmbhft13Ih13OW6aE=');
+    background-size: cover;
 }
-.row{
-    background: #ffffff;
-    box-shadow: 18px 0px 87px 0px rgb(10 15 70/ 7%);
-    border-radius: 12px;
-    padding: 45px 45px 45px 45px;
-    transition: ease .45s;
-    cursor: pointer;
+#skills h2{
+    background: linear-gradient(to top, #290863, #c117c1);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
 }
-.s img{
-    height: 60px;
-    width: 65px;
-    background: #f75124;
-    padding: 15px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+#skills .heading{
+    font-family: 'Righteous', cursive;
 }
-.s.s-two img{
-    background: #baebcd;
-} 
-.s.s-three img{
-    background: #d9d1fa;
-} 
-.s.s-four img{
-    background: #faedce;
+
+#skillname{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.row h3{ 
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 2px;
+#skillname img{
+    width: 80px;
+    height: 70px;
+    margin: 14px 54px 14px 24px;
+    transition: ease 2s;
 }
-.row h5{
-    font-size: 17px;
-    font-weight: 500;
-    margin-bottom: 19px;
+
+#skillname img:hover {
+    transform: scale(1.6);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
-.row p{
-    font-size: var(--p-font);
-    color: var(--second-color);
-    line-height: 28px;
-}
-.row:hover{
-    will-change: transform;
-    transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
-}
+/* coding prfiles */
 .cta-box{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px, auto));
@@ -325,14 +308,21 @@ span{
     margin-top: 5rem;
     text-align: center;
 }
+.cta h2{
+    background: linear-gradient(to top, black,rgb(219, 16, 49));
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
 .wrap{
     background: #ffffff;
-    box-shadow: 18px 0px 87px 0px rgb(10 15 70/ 7%);
+    /* box-shadow: 18px 0px 87px 0px rgb(10 15 70/ 7%); */
     border-radius: 12px;
     padding: 50px 50px 50px 50px;
     transition: ease .40s;
     cursor: pointer;
+    box-shadow:rgba(0, 0, 0, 0.12) 0px -12px 30px,rgba(0, 0, 0, 0.12) 0px 4px 6px;
 }
+
 .wrap .sub-img:hover{
     will-change: transform;
     transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05) ;
@@ -351,70 +341,80 @@ span{
     font-weight: 500;
     margin-bottom: 2px;
 }
-.contact{
-    background: #8067f0eb;
-    width: 64%;
-    margin: 100px auto;
-    padding: 70px 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 12px;
-    background-image: url(image/intro.png);
+
+/* experience & education*/
+.edu{
+    background-image: url('https://media.istockphoto.com/id/1226478926/photo/green-background-3d-render.jpg?s=612x612&w=0&k=20&c=_2N-T1myybE8kLkNCpyzhiLXcVlhlezNEoCSe9Nsgm8=');
     background-size: cover;
 }
-.center h3{
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 3px;
-    color: var(--bg-color);
+#eduH{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 40px;    
+    background: linear-gradient(to top, black,rgb(219, 16, 49));
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+    margin-bottom: 20px;
 }
-.center p{
-    font-size: var(--p-font);
-    color: var(--bg-color);
-    line-height: 26px;
-    margin-bottom: 25px;
+.BOX{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
 }
-.contact .action form input[type="email"]{
-    max-width: 100%;
-    width: 470px;
-    padding: 12px 15px;
-    background: var(--bg-color);
-    color: var(--text-color);
-    border: none;
-    outline: none;
-    margin: 0 10px 20px 0;
-    border-radius: 30px;
+.grid{
+    padding: 10px;
+    width: 350px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.404);
+    text-align: center;
+    color: #01003d;
+    font-size: 18px;
+    font-family: 'Secular One', sans-serif;
+
+
 }
-.contact .action form input[type="submit"]{
-    padding: 12px 40px;
-    background: var(--main-color);
-    color: var(--bg-color);
-    border: none;
-    outline: none;
-    margin: 0 10px 20px 0;
-    border-radius: 30px;
-    cursor: pointer;
+.grid h3{
+    font-weight: 1000;
 }
-@media screen and (max-width:793px){
-    .action{
-        width: 50%;
-        margin: 5px auto;
-    }
+.grid span{
+    color: #01003d;
 }
-@media screen and (max-width:415px){
-    .contact{
-        width: 80%;
-    }
-    .contact h3{
-        font-size: 2px;
-        font-weight: 100;
-    }
-    .contact p{
-        text-align: center;
-        font-size: 8px;
-    }
+.grid1 #graduation {
+    position: absolute;
+    left: 140px;
+    top: -20px;
+    background: -webkit-linear-gradient(black,rgb(16, 219, 178));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    line-height: 0.6;
+}
+.grid2 #school {
+    position: absolute;
+    left: 140px;
+    top: -20px;
+    background: -webkit-linear-gradient(black,rgb(16, 219, 178));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    line-height: 0.6;
+}
+
+.grid3 #school1 {
+    position: absolute;
+    left: 140px;
+    top: -20px;
+    background: -webkit-linear-gradient(black,rgb(16, 219, 178));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    line-height: 0.6;
 }
 
 .ends{
@@ -424,7 +424,7 @@ span{
 .ends p{
     font-size: var(--p-font);
     line-height: 1px;
-}
+} 
 @media (maxwidth: 1126px){
     header{
         padding: 16px 3%;
@@ -432,11 +432,16 @@ span{
     }
 }
 
-
+/* projects */
 /* image slider */
 .slide-container{
     position: relative;
     width: 100%;
+}
+.slide-container h2{
+    background: linear-gradient(to top, black,rgb(219, 16, 49));
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
 }
 .slide img{
     width: 100%;  
